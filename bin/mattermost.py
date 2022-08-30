@@ -10,7 +10,7 @@ def main():
     ## arguments
     parser = argparse.ArgumentParser(description='push events to mattermost webhook')
     parser.add_argument('-u', type=str, dest='url', required=True, help='the url to mattermost webhook')
-    parser.add_argument('-s', dest='show_history', default=False, action=argparse.BooleanOptionalAction, help='show history of the trigger')
+    parser.add_argument('-s', dest='show_history', action='store_true', help='show history of the trigger')
     args = parser.parse_args()
 
     # read event

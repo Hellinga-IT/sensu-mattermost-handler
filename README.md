@@ -8,5 +8,5 @@ create a webhook in mattermost
 
 ## Usage
 ```
-mattermost.py -u <url of webhook>
+mattermost.py -u <url of webhook> [-s]
 ```
